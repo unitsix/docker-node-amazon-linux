@@ -11,3 +11,5 @@ RUN yum -y --nogpgcheck install nodejs
 	
 # install Make	
 RUN yum -y install make
+
+WORKDIR /var/www
