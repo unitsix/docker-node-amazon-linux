@@ -8,6 +8,9 @@ WORKDIR /var
 
 RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 RUN yum -y --nogpgcheck install nodejs
+RUN npm cache clean -f && /
+	sudo npm install -g n && /
+	sudo n stable
 	
 # install Make	
 RUN yum -y install make
