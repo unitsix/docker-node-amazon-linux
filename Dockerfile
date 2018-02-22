@@ -1,5 +1,5 @@
 FROM amazonlinux
-MAINTAINER Vaya
+MAINTAINER ryanstockdale
 EXPOSE 80 8500
 VOLUME ["/var/app"]
 
